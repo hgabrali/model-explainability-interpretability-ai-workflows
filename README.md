@@ -1,4 +1,155 @@
+<div align="center">
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--                    HERO BANNER (SVG)                      -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+
+<svg width="900" height="200" viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Dark gradient background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="50%" style="stop-color:#161b22"/>
+      <stop offset="100%" style="stop-color:#0d1117"/>
+    </linearGradient>
+    <!-- Accent glow -->
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#58a6ff;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#0d1117;stop-opacity:0"/>
+    </radialGradient>
+    <!-- Grid pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#21262d" stroke-width="0.5"/>
+    </pattern>
+    <!-- Filter for glow effect -->
+    <filter id="textGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="iconGlow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background layers -->
+  <rect width="900" height="200" fill="url(#bg)" rx="16"/>
+  <rect width="900" height="200" fill="url(#grid)" rx="16" opacity="0.4"/>
+  <rect width="900" height="200" fill="url(#glow)" rx="16"/>
+
+  <!-- Top-left accent line -->
+  <rect x="0" y="0" width="900" height="3" fill="#58a6ff" rx="2" opacity="0.8"/>
+
+  <!-- ── LEFT ICON SECTION ── -->
+  <!-- Brain outer circle -->
+  <circle cx="105" cy="100" r="68" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <circle cx="105" cy="100" r="64" fill="none" stroke="#58a6ff" stroke-width="0.8" opacity="0.3"/>
+
+  <!-- Neural network nodes (brain metaphor) -->
+  <!-- Layer 1 nodes -->
+  <circle cx="62" cy="78" r="7" fill="#1f6feb" filter="url(#iconGlow)" opacity="0.9"/>
+  <circle cx="62" cy="100" r="7" fill="#1f6feb" filter="url(#iconGlow)" opacity="0.9"/>
+  <circle cx="62" cy="122" r="7" fill="#1f6feb" filter="url(#iconGlow)" opacity="0.9"/>
+  <!-- Layer 2 nodes -->
+  <circle cx="95" cy="68" r="7" fill="#58a6ff" filter="url(#iconGlow)"/>
+  <circle cx="95" cy="90" r="7" fill="#58a6ff" filter="url(#iconGlow)"/>
+  <circle cx="95" cy="112" r="7" fill="#58a6ff" filter="url(#iconGlow)"/>
+  <circle cx="95" cy="132" r="7" fill="#58a6ff" filter="url(#iconGlow)"/>
+  <!-- Layer 3 nodes -->
+  <circle cx="128" cy="78" r="7" fill="#79c0ff" filter="url(#iconGlow)"/>
+  <circle cx="128" cy="100" r="7" fill="#79c0ff" filter="url(#iconGlow)"/>
+  <circle cx="128" cy="122" r="7" fill="#79c0ff" filter="url(#iconGlow)"/>
+  <!-- Output node -->
+  <circle cx="158" cy="100" r="9" fill="#3fb950" filter="url(#iconGlow)"/>
+
+  <!-- Connections layer 1→2 -->
+  <line x1="69" y1="78" x2="88" y2="68" stroke="#58a6ff" stroke-width="0.8" opacity="0.4"/>
+  <line x1="69" y1="78" x2="88" y2="90" stroke="#58a6ff" stroke-width="0.8" opacity="0.4"/>
+  <line x1="69" y1="100" x2="88" y2="90" stroke="#58a6ff" stroke-width="0.8" opacity="0.4"/>
+  <line x1="69" y1="100" x2="88" y2="112" stroke="#58a6ff" stroke-width="0.8" opacity="0.4"/>
+  <line x1="69" y1="122" x2="88" y2="112" stroke="#58a6ff" stroke-width="0.8" opacity="0.4"/>
+  <line x1="69" y1="122" x2="88" y2="132" stroke="#58a6ff" stroke-width="0.8" opacity="0.4"/>
+  <!-- Connections layer 2→3 -->
+  <line x1="102" y1="68" x2="121" y2="78" stroke="#79c0ff" stroke-width="0.8" opacity="0.4"/>
+  <line x1="102" y1="90" x2="121" y2="78" stroke="#79c0ff" stroke-width="0.8" opacity="0.4"/>
+  <line x1="102" y1="90" x2="121" y2="100" stroke="#79c0ff" stroke-width="0.8" opacity="0.4"/>
+  <line x1="102" y1="112" x2="121" y2="100" stroke="#79c0ff" stroke-width="0.8" opacity="0.4"/>
+  <line x1="102" y1="112" x2="121" y2="122" stroke="#79c0ff" stroke-width="0.8" opacity="0.4"/>
+  <line x1="102" y1="132" x2="121" y2="122" stroke="#79c0ff" stroke-width="0.8" opacity="0.4"/>
+  <!-- Connections layer 3→output -->
+  <line x1="135" y1="78" x2="149" y2="100" stroke="#3fb950" stroke-width="1.2" opacity="0.6"/>
+  <line x1="135" y1="100" x2="149" y2="100" stroke="#3fb950" stroke-width="1.2" opacity="0.6"/>
+  <line x1="135" y1="122" x2="149" y2="100" stroke="#3fb950" stroke-width="1.2" opacity="0.6"/>
+
+  <!-- ── DIVIDER ── -->
+  <line x1="195" y1="30" x2="195" y2="170" stroke="#30363d" stroke-width="1.5"/>
+
+  <!-- ── RIGHT TEXT SECTION ── -->
+  <!-- Main title -->
+  <text x="230" y="72" font-family="'Segoe UI', system-ui, -apple-system, sans-serif"
+        font-size="34" font-weight="700" fill="#e6edf3" filter="url(#textGlow)">Model Explainability</text>
+  <text x="230" y="108" font-family="'Segoe UI', system-ui, -apple-system, sans-serif"
+        font-size="34" font-weight="700" fill="#58a6ff" filter="url(#textGlow)">&amp; Interpretability</text>
+
+  <!-- Subtitle -->
+  <text x="232" y="138" font-family="'Segoe UI', system-ui, -apple-system, sans-serif"
+        font-size="15" fill="#8b949e" font-style="italic">SHAP · LIME · Counterfactuals · PICARED Framework</text>
+
+  <!-- Bottom tag line -->
+  <text x="232" y="165" font-family="'Segoe UI', system-ui, -apple-system, sans-serif"
+        font-size="13" fill="#3fb950">✦ AI-Driven Data Science Workflows — Technical Appendix</text>
+
+  <!-- Version badge top-right -->
+  <rect x="800" y="16" width="80" height="22" rx="11" fill="#1f6feb" opacity="0.85"/>
+  <text x="840" y="31" font-family="monospace" font-size="11" fill="#ffffff"
+        text-anchor="middle" font-weight="600">v 0.1.0</text>
+
+  <!-- Bottom border -->
+  <rect x="0" y="197" width="900" height="3" fill="#3fb950" rx="2" opacity="0.6"/>
+</svg>
+
+<br/>
+
 # Model Explainability and Interpretability in AI-Driven Data Science Workflows
+
+### *A Comprehensive Technical Appendix to "AI-Driven Data Science Workflows"*
+
+<br/>
+
+<!-- ── SHIELDS ── -->
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![SHAP](https://img.shields.io/badge/SHAP-0.44%2B-FF6B35?style=for-the-badge&logoColor=white)](https://shap.readthedocs.io/)
+[![LIME](https://img.shields.io/badge/LIME-0.2%2B-9B59B6?style=for-the-badge&logoColor=white)](https://lime-ml.readthedocs.io/)
+[![XGBoost](https://img.shields.io/badge/XGBoost-2.0%2B-189AB4?style=for-the-badge&logo=xgboost&logoColor=white)](https://xgboost.readthedocs.io/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3%2B-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)](https://scikit-learn.org/)
+
+<br/>
+
+<!-- ── TOPIC BADGES ── -->
+![XAI](https://img.shields.io/badge/Explainable%20AI-XAI-58a6ff?style=flat-square)
+![SHAP](https://img.shields.io/badge/Shapley%20Values-Game%20Theory-1f6feb?style=flat-square)
+![LIME](https://img.shields.io/badge/Local%20Surrogates-LIME-9b59b6?style=flat-square)
+![Counterfactuals](https://img.shields.io/badge/Counterfactuals-DiCE-e74c3c?style=flat-square)
+![PICARED](https://img.shields.io/badge/PICARED-Framework-3fb950?style=flat-square)
+![Data Science](https://img.shields.io/badge/AI--Driven-Data%20Science-orange?style=flat-square)
+
+<br/>
+
+> **"The goal is not to replace human judgment but to augment it — making the invisible visible inside the black box."**
+
+<br/>
+
+</div>
+
+---
+
 
 > **A Comprehensive Technical Appendix to "AI-Driven Data Science Workflows"**
 
